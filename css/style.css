@@ -1,0 +1,61 @@
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(58, 25, 3);
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 3rem;
+}
+
+
+/* Estilos de navegación */
+
+ul{
+    display: flex;
+    justify-content: center;
+}
+
+li{
+    margin: 1rem;
+    list-style: none;
+}
+
+li a{
+    font-size: 1.5rem;
+    color: rgb(218, 134, 32);
+    text-decoration: none;
+}
+
+li a:hover{
+    color: rgb(238, 137, 15);
+}
+
+
+/* Estilos de títulos y subtítulos */
+
+.titulos{
+    color: rgb(231, 198, 158);
+    font-size: 3rem;
+}
+
+.subtitulo{
+    color: rgb(241, 176, 91);
+    font-style: italic;
+}
+
+
+/* Estilos de párrafos */
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(245, 245, 245);
+}
+

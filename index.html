@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/variable.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Variables</a></li> <!-- Enlace a la página variables.html -->
+                    <li><a href="condicionales.html">Condicionales</a></li> <!-- Enlace a la página condicionales.html -->
+                    <li><a href="#">Bucles</a></li> <!-- Enlace a una sección de bucles -->
+                    <li><a href="#">Funciones y Objetos</a></li> <!-- Enlace a una sección de funciones y objetos -->
+                </ul>
+            </nav>
+        </header>
+        <main id="variables">
+            <section class="ejemplos">
+                <h1 class="titulos">Variables</h1> <!-- Título de la sección -->
+                <div class="uno">
+                    <h1 class="subtitulo">Ejemplo 1</h1> <!-- Título del ejemplo 1 -->
+                    <p>
+                        let datouno = 4; <br> <!-- Declaración de variable -->
+                        let datodos = 3; <br> <!-- Declaración de variable -->
+                        <br>
+                        let sumadedatos = (datouno + datodos) <!-- Operación y asignación -->
+                    </p>
+                    <p id="resultado"></p> <!-- Espacio para mostrar el resultado -->
+                </div>
+                <div class="uno">
+                    <h1 class="subtitulo">Ejemplo 2</h1> <!-- Título del ejemplo 2 -->
+                    <p>Área de un triángulo</p> <!-- Descripción del ejemplo -->
+                    <p>
+                        let altura = 3; <br> <!-- Declaración de variable -->
+                        let base = 9;<br><br> <!-- Declaración de variable -->
+                        let area = ((altura*base)/2) <!-- Operación y asignación -->
+                    </p>
+                    <p id="area"></p> <!-- Espacio para mostrar el resultado -->
+                </div>
+                <div class="uno">
+                    <h1 class="subtitulo">Ejemplo 3</h1> <!-- Título del ejemplo 3 -->
+                    <p>
+                        const nombre = 'Carmen ';<br> <!-- Declaración de constante -->
+                        const apellido = 'Ruíz';<br><br> <!-- Declaración de constante -->
+                        let nombreCompleto = (nombre + apellido) <!-- Operación y asignación -->
+                    </p>
+                    <p id="completo"></p> <!-- Espacio para mostrar el resultado -->
+                </div>
+                <div class="uno">
+                    <h1 class="subtitulo">Ejemplo 4</h1> <!-- Título del ejemplo 4 -->
+                    <p>Mis compras son:</p> <!-- Descripción del ejemplo -->
+                    <p>
+                        const frutas = ["fresa🍓", "mango🥭", "banano🍌"];<br> <!-- Declaración de constante -->
+                        frutas.push("kiwi🥝"); <!-- Agregar elemento al array -->
+                    </p>
+                    <p id="compras"></p> <!-- Espacio para mostrar el resultado -->
+                </div>
+                <div class="uno">
+                    <h1 class="subtitulo">Ejemplo 5</h1> <!-- Título del ejemplo 5 -->
+                    <p>¿Cuál es mi fruta favorita?</p>
+                
+                    <p>
+                        const colores = ["🧡", "💙", "💜"];<br>
+                        function myFunction() {
+                            document.getElementById("opcion").innerHTML = (colores[1]);
+                        }
+                    </p>
+                    <p id="colores"></p>
+                    <button onclick="myFunction()">color...</button>
+                    <p id="opcion"></p>
+                </div>
+                
+            </section>
+        </main>
+
+        
+
+    </div>
+
+
+    
+</body>
+</html>
