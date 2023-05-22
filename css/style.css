@@ -58,4 +58,15 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(245, 245, 245);
 }
+input{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
 
+.lista{
+    display: flex;
+    justify-content: left;
+    color: antiquewhite;
+}

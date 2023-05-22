@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,7 @@
 
 <body>
     <div class="container">
-        
+
         <header>
             <nav>
                 <ul>
@@ -21,10 +22,9 @@
                     <li><a href="#">Funciones y Objetos</a></li>
                 </ul>
             </nav>
-        </header>
         <main>
             <section class="ejemplos">
-                <h1 class="titulos">Variables</h1>
+                <h1 class="titulos">Condicionales</h1>
                 <div class="uno">
                     <h1 class="subtitulo">Ejemplo 1</h1>
 
@@ -35,31 +35,84 @@
                         let edad = '19';
                     </p>
                     <p id="permiso"></p>
-                    <button onclick= myFunction()>si o no</button>
-                    
+                    <button onclick=myFunction()>si o no</button>
+
                 </div>
                 <div class="uno">
                     <h1 class="subtitulo">Ejemplo 2</h1>
+                    <p>El numero es positivo o negativo?</p>
+
+                    <input type="number" id="numeroInput"><!-- este me deja saber que numero colocar. -->
+                    <button onclick="comprobar()">Comprobar</button> <!-- donde ira la funcion y tambien el comprobante-->
+                    <p id="resultado">
+                        <!-- aqui retornaara
+                        el dato -->
+                    </p>
                     
+
                 </div>
                 <div class="uno">
                     <h1 class="subtitulo">Ejemplo 3</h1>
-                    
+                    <p>El número es par o impar</p>
+
+                    <input type="number" id="ingresanumero"><!-- numero de ingreso -->
+                    <button onclick="saber()">par o impar?</button> 
+                    <p id="answer"></p>
+
                 </div>
                 <div class="uno">
                     <h1 class="subtitulo">Ejemplo 4</h1>
-                    
+                    <p>Adivina</p>
+                    <p>
+                        Choco me dice la gente,
+                        late mi corazón.
+                        El que no sepa mi nombre,
+                        es un gran tontorrón.
+                        <form>
+                            <p>
+                                <input id="opcion1" type="radio" onchange="mostrarMensaje()">
+                                <label for="opcion1">Chocolate</label>
+                                
+
+                                <input id="opcion2" type="radio" onchange="mostrarMensaje()">
+                                <label for="opcion2">Chocomilk</label>
+                                
+                                <p id="mensaje"></p>
+
+                            </p>
+                            
+                        </form>
+                        
+
+                    </p>
+
                 </div>
                 <div class="uno">
                     <h1 class="subtitulo">Ejemplo 5</h1>
+                    <p>Puedes entrar al juego si...</p>
+                    <p>
+                        <ul class="lista">
+                            <li id="op1">🎡Mides mas de 50cm</li>
+                            <input type="radio" onclick="comprobar()">
+                            <li id="op2">🎡Tienes tiquete</li>
+                            <input type="radio" onclick="comprobar()">
+                            <li id="op3">🎡Si no tienes tiquete, pero tienes cupones puedes pasar</li>
+                            <input type="radio" onclick="comprobar()">
+                        </ul>
+
+                        <p id="comprobantePlay"></p>
+
+                    </p>
                     
+
                 </div>
-                
+
             </section>
         </main>
 
 
     </div>
-    
+
 </body>
+
 </html>
