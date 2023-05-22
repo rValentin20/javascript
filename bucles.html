@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/variable.js"></script>
+    <script defer src="js/bucles.js"></script>
 </head>
 
 <body>
@@ -24,15 +24,24 @@
         </header>
         <main id="variables">
             <section class="ejemplos">
-                <h1 class="titulos">Variables</h1> <!-- Título de la sección -->
+                <h1 class="titulos">Bucles</h1> <!-- Título de la sección -->
                 <div class="uno">
                     <h1 class="subtitulo">Ejemplo 1</h1> <!-- Título del ejemplo 1 -->
-                    <p>
-                        let datouno = 4; <br> <!-- Declaración de variable -->
-                        let datodos = 3; <br> <!-- Declaración de variable -->
-                        <br>
-                        let sumadedatos = (datouno + datodos) <!-- Operación y asignación -->
-                    </p>
+                    <form name="selectForm">
+                        <p>
+                          <label for="musicTypes">Elija algunos tipos de música, luego haga clic en el botón de abajo:</label>
+                          <select id="musicTypes" name="musicTypes" multiple="multiple">
+                            <option selected="selected">R&B</option>
+                            <option>Jazz</option>
+                            <option>Blues</option>
+                            <option>New Age</option>
+                            <option>Classical</option>
+                            <option>Opera</option>
+                          </select>
+                        </p>
+                        <p><input id="btn" type="button" value="¿Cuántos están seleccionados?" /></p>
+                    </form>
+                    
                     <p id="resultado"></p> <!-- Espacio para mostrar el resultado -->
                 </div>
                 <div class="uno">

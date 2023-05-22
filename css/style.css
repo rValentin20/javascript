@@ -70,3 +70,6 @@ input{
     justify-content: left;
     color: antiquewhite;
 }
+.subrayar{
+    background-color: rgba(216, 180, 113, 0.1);
+}

@@ -38,7 +38,7 @@ function mostrarMensaje(){
 
 
     if (opcion1.checked) {
-      document.getElementById("mensaje").innerHTML = "Correcto✔️";
+      document.getElementById("mensaje").innerHTML = "Correcto";
     } else if (opcion2.checked) {
       document.getElementById("mensaje").innerHTML = "Incorrecto❌";
     } 
@@ -46,7 +46,7 @@ function mostrarMensaje(){
 
 } 
 
-function comprobar() {
+function analizar() {
     let op1 = document.getElementById('op1');
     let op2 = document.getElementById('op2');
     let op3 = document.getElementById('op3');
@@ -57,9 +57,13 @@ function comprobar() {
     {
       comprobantePlay.innerHTML = "Puedes jugar";
     }
-    else ((op1.checked && op2.checked) || (op1.checked && op3.checked))
+    if ((op1.checked && op2.checked) || (op1.checked && op3.checked))
     {
         comprobantePlay.innerHTML = "Puedes jugar";
+    }
+    else
+    {
+        comprobantePlay.innerHTML = "No puedes jugar";
     }
      
     
